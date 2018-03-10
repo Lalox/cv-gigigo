@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72F955E879FA0DCA5C787AFE /* Pods_cv_gigigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106995A8380F3261F6AD7AD7 /* Pods_cv_gigigo.framework */; };
+		A0477C2720538385009BF7B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0477C2620538385009BF7B8 /* AppDelegate.swift */; };
+		A0477C2920538385009BF7B8 /* GGInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0477C2820538385009BF7B8 /* GGInformationViewController.swift */; };
+		A0477C2B20538385009BF7B8 /* GGResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */; };
+		A0477C2E20538385009BF7B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0477C2C20538385009BF7B8 /* Main.storyboard */; };
+		A0477C3020538385009BF7B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0477C2F20538385009BF7B8 /* Assets.xcassets */; };
+		A0477C3320538385009BF7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0477C3120538385009BF7B8 /* LaunchScreen.storyboard */; };
+		A0477C3E20539251009BF7B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0477C3D20539251009BF7B8 /* Localizable.strings */; };
+		A0477C40205393E2009BF7B8 /* UIColor+GGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0477C3F205393E2009BF7B8 /* UIColor+GGColor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		106995A8380F3261F6AD7AD7 /* Pods_cv_gigigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cv_gigigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8184096178EF2BA269BADDFA /* Pods-cv-gigigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cv-gigigo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cv-gigigo/Pods-cv-gigigo.debug.xcconfig"; sourceTree = "<group>"; };
+		84B79A02C051B97CEC8B395B /* Pods-cv-gigigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cv-gigigo.release.xcconfig"; path = "Pods/Target Support Files/Pods-cv-gigigo/Pods-cv-gigigo.release.xcconfig"; sourceTree = "<group>"; };
+		A0477C2320538385009BF7B8 /* cv-gigigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cv-gigigo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0477C2620538385009BF7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0477C2820538385009BF7B8 /* GGInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGInformationViewController.swift; sourceTree = "<group>"; };
+		A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGResumeViewController.swift; sourceTree = "<group>"; };
+		A0477C2D20538385009BF7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0477C2F20538385009BF7B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0477C3220538385009BF7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0477C3420538385009BF7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0477C3A20538ED7009BF7B8 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		A0477C3B20538ED7009BF7B8 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A0477C3D20539251009BF7B8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A0477C3F205393E2009BF7B8 /* UIColor+GGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+GGColor.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0477C2020538385009BF7B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F955E879FA0DCA5C787AFE /* Pods_cv_gigigo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D0E216BC375D464EDCACEAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8184096178EF2BA269BADDFA /* Pods-cv-gigigo.debug.xcconfig */,
+				84B79A02C051B97CEC8B395B /* Pods-cv-gigigo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4126F523D8922BEB9EA4E299 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106995A8380F3261F6AD7AD7 /* Pods_cv_gigigo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0477C1A20538385009BF7B8 = {
+			isa = PBXGroup;
+			children = (
+				A0477C2520538385009BF7B8 /* cv-gigigo */,
+				A0477C2420538385009BF7B8 /* Products */,
+				1D0E216BC375D464EDCACEAF /* Pods */,
+				4126F523D8922BEB9EA4E299 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0477C2420538385009BF7B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0477C2320538385009BF7B8 /* cv-gigigo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0477C2520538385009BF7B8 /* cv-gigigo */ = {
+			isa = PBXGroup;
+			children = (
+				A0477C3C2053922B009BF7B8 /* Supporting Files */,
+				A0477C2620538385009BF7B8 /* AppDelegate.swift */,
+				A0477C2820538385009BF7B8 /* GGInformationViewController.swift */,
+				A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */,
+				A0477C2C20538385009BF7B8 /* Main.storyboard */,
+				A0477C2F20538385009BF7B8 /* Assets.xcassets */,
+				A0477C3120538385009BF7B8 /* LaunchScreen.storyboard */,
+				A0477C3420538385009BF7B8 /* Info.plist */,
+			);
+			path = "cv-gigigo";
+			sourceTree = "<group>";
+		};
+		A0477C3C2053922B009BF7B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0477C3D20539251009BF7B8 /* Localizable.strings */,
+				A0477C3F205393E2009BF7B8 /* UIColor+GGColor.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0477C2220538385009BF7B8 /* cv-gigigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0477C3720538385009BF7B8 /* Build configuration list for PBXNativeTarget "cv-gigigo" */;
+			buildPhases = (
+				A6F379C97E16A6911D4E8B15 /* [CP] Check Pods Manifest.lock */,
+				A0477C1F20538385009BF7B8 /* Sources */,
+				A0477C2020538385009BF7B8 /* Frameworks */,
+				A0477C2120538385009BF7B8 /* Resources */,
+				52294F06EF3E80BDCA951A7E /* [CP] Embed Pods Frameworks */,
+				4518F163C2A41E2CDB95B436 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cv-gigigo";
+			productName = "cv-gigigo";
+			productReference = A0477C2320538385009BF7B8 /* cv-gigigo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0477C1B20538385009BF7B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GG;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Eduardo Miñon";
+				TargetAttributes = {
+					A0477C2220538385009BF7B8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0477C1E20538385009BF7B8 /* Build configuration list for PBXProject "cv-gigigo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = A0477C1A20538385009BF7B8;
+			productRefGroup = A0477C2420538385009BF7B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0477C2220538385009BF7B8 /* cv-gigigo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0477C2120538385009BF7B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0477C3320538385009BF7B8 /* LaunchScreen.storyboard in Resources */,
+				A0477C3E20539251009BF7B8 /* Localizable.strings in Resources */,
+				A0477C3020538385009BF7B8 /* Assets.xcassets in Resources */,
+				A0477C2E20538385009BF7B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4518F163C2A41E2CDB95B436 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cv-gigigo/Pods-cv-gigigo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52294F06EF3E80BDCA951A7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cv-gigigo/Pods-cv-gigigo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cv-gigigo/Pods-cv-gigigo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F379C97E16A6911D4E8B15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cv-gigigo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0477C1F20538385009BF7B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0477C2B20538385009BF7B8 /* GGResumeViewController.swift in Sources */,
+				A0477C40205393E2009BF7B8 /* UIColor+GGColor.swift in Sources */,
+				A0477C2720538385009BF7B8 /* AppDelegate.swift in Sources */,
+				A0477C2920538385009BF7B8 /* GGInformationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0477C2C20538385009BF7B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0477C2D20538385009BF7B8 /* Base */,
+				A0477C3A20538ED7009BF7B8 /* es-MX */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0477C3120538385009BF7B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0477C3220538385009BF7B8 /* Base */,
+				A0477C3B20538ED7009BF7B8 /* es-MX */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0477C3520538385009BF7B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0477C3620538385009BF7B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0477C3820538385009BF7B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8184096178EF2BA269BADDFA /* Pods-cv-gigigo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cv-gigigo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bayer.hh.cv-gigigo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0477C3920538385009BF7B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B79A02C051B97CEC8B395B /* Pods-cv-gigigo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cv-gigigo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bayer.hh.cv-gigigo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0477C1E20538385009BF7B8 /* Build configuration list for PBXProject "cv-gigigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0477C3520538385009BF7B8 /* Debug */,
+				A0477C3620538385009BF7B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0477C3720538385009BF7B8 /* Build configuration list for PBXNativeTarget "cv-gigigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0477C3820538385009BF7B8 /* Debug */,
+				A0477C3920538385009BF7B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0477C1B20538385009BF7B8 /* Project object */;
+}

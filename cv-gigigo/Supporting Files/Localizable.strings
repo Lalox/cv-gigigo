@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  cv-gigigo
+
+  Created by Eduardo Miñon on 09/03/18.
+  Copyright © 2018 Eduardo Miñon. All rights reserved.
+*/
+
+//Pantalla de resumen
+
+"GG_INTRODUCEMENT_NAME" = "Eduardo Jesus Miñon Rosado";
+"GG_INTRODUCEMENT_ADDRESS" = "Obrero Mundial No920, Int 402, Álamos, CP 03400, Benito Juárez, Ciudad de México";

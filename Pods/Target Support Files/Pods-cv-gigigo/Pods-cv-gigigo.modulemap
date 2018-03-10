@@ -1,0 +1,6 @@
+framework module Pods_cv_gigigo {
+  umbrella header "Pods-cv-gigigo-umbrella.h"
+
+  export *
+  module * { export * }
+}
