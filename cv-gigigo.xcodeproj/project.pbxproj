@@ -23,6 +23,9 @@
 		A09A69842054CC940080C92A /* 005-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A697F2054CC930080C92A /* 005-facebook.png */; };
 		A09A69852054CC940080C92A /* 004-instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69802054CC940080C92A /* 004-instagram.png */; };
 		A09A69872054D4A90080C92A /* GGGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69862054D4A90080C92A /* GGGalleryViewController.swift */; };
+		A09A69902054E4140080C92A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A09A698E2054E4140080C92A /* Model.xcdatamodeld */; };
+		A09A69B9205580060080C92A /* GGMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69B8205580060080C92A /* GGMessageEntity.swift */; };
+		A09A69BB205580F00080C92A /* GGStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69BA205580F00080C92A /* GGStorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		A09A697F2054CC930080C92A /* 005-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "005-facebook.png"; sourceTree = "<group>"; };
 		A09A69802054CC940080C92A /* 004-instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "004-instagram.png"; sourceTree = "<group>"; };
 		A09A69862054D4A90080C92A /* GGGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGGalleryViewController.swift; sourceTree = "<group>"; };
+		A09A698F2054E4140080C92A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A09A69B8205580060080C92A /* GGMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGMessageEntity.swift; sourceTree = "<group>"; };
+		A09A69BA205580F00080C92A /* GGStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGStorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +104,10 @@
 		A0477C2520538385009BF7B8 /* cv-gigigo */ = {
 			isa = PBXGroup;
 			children = (
+				A09A69C420559C9F0080C92A /* Views */,
+				A09A69882054DE7D0080C92A /* Storage */,
 				A0477C3C2053922B009BF7B8 /* Supporting Files */,
 				A0477C2620538385009BF7B8 /* AppDelegate.swift */,
-				A0477C2820538385009BF7B8 /* GGInformationViewController.swift */,
-				A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */,
-				A09A69862054D4A90080C92A /* GGGalleryViewController.swift */,
-				A0477C2C20538385009BF7B8 /* Main.storyboard */,
 				A0477C2F20538385009BF7B8 /* Assets.xcassets */,
 				A0477C3120538385009BF7B8 /* LaunchScreen.storyboard */,
 				A0477C3420538385009BF7B8 /* Info.plist */,
@@ -132,6 +136,51 @@
 				A09A697A2054CB4B0080C92A /* profile_pic.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		A09A69882054DE7D0080C92A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A09A698E2054E4140080C92A /* Model.xcdatamodeld */,
+				A09A69B8205580060080C92A /* GGMessageEntity.swift */,
+				A09A69BA205580F00080C92A /* GGStorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A09A69C420559C9F0080C92A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0477C2C20538385009BF7B8 /* Main.storyboard */,
+				A09A69C720559CBC0080C92A /* Galley */,
+				A09A69C620559CB70080C92A /* Resume */,
+				A09A69C520559CAC0080C92A /* Information */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A09A69C520559CAC0080C92A /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				A0477C2820538385009BF7B8 /* GGInformationViewController.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		A09A69C620559CB70080C92A /* Resume */ = {
+			isa = PBXGroup;
+			children = (
+				A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */,
+			);
+			path = Resume;
+			sourceTree = "<group>";
+		};
+		A09A69C720559CBC0080C92A /* Galley */ = {
+			isa = PBXGroup;
+			children = (
+				A09A69862054D4A90080C92A /* GGGalleryViewController.swift */,
+			);
+			path = Galley;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,10 +285,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cv-gigigo/Pods-cv-gigigo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -272,10 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09A69872054D4A90080C92A /* GGGalleryViewController.swift in Sources */,
+				A09A69B9205580060080C92A /* GGMessageEntity.swift in Sources */,
 				A0477C2B20538385009BF7B8 /* GGResumeViewController.swift in Sources */,
 				A0477C40205393E2009BF7B8 /* UIColor+GGColor.swift in Sources */,
 				A0477C2720538385009BF7B8 /* AppDelegate.swift in Sources */,
 				A0477C2920538385009BF7B8 /* GGInformationViewController.swift in Sources */,
+				A09A69902054E4140080C92A /* Model.xcdatamodeld in Sources */,
+				A09A69BB205580F00080C92A /* GGStorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +516,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A09A698E2054E4140080C92A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A09A698F2054E4140080C92A /* Model.xcdatamodel */,
+			);
+			currentVersion = A09A698F2054E4140080C92A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A0477C1B20538385009BF7B8 /* Project object */;
 }

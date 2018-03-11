@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EA59CF2689778C49B88A192F16AFF4FB"
+               BlueprintIdentifier = "D9308B882349A59CF2BA6B89300ABECB"
                BuildableName = "Pods_cv_gigigo.framework"
                BlueprintName = "Pods-cv-gigigo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EA59CF2689778C49B88A192F16AFF4FB"
+            BlueprintIdentifier = "D9308B882349A59CF2BA6B89300ABECB"
             BuildableName = "Pods_cv_gigigo.framework"
             BlueprintName = "Pods-cv-gigigo"
             ReferencedContainer = "container:Pods.xcodeproj">

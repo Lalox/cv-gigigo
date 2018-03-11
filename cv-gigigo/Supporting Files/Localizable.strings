@@ -18,7 +18,18 @@
 "GG_INTRODUCEMENT_EMAIL" = "eduardo1618@gmail.com";
 
 //Pantalla de currículum
-"GG_RESUME_TAB_LABEL" = "C.V.";
+"GG_RESUME_TAB_LABEL" = "Currículum";
+
+"GG_FIRST_SECTION_TITLE" = "Formación y experiencia profesional";
+"GG_FTIST_SECTION_ITEM_1" = "Experiencia";
+"GG_FTIST_SECTION_ITEM_2" = "Aplicaciones";
+"GG_FTIST_SECTION_ITEM_3" = "Otros";
+
+"GG_SECOND_SECTION_TITLE" = "Mensajes";
+"GG_ALERT_TITLE" = "Mensaje:";
+"GG_ALERT_PLACEHOLDER" = "Escribe tu mensaje aquí";
+"GG_ALERT_OK" = "Guardar";
+"GG_ALERT_CANCEL" = "Cancelar";
 
 //Pantalla de galería
 "GG_GALLERY_TAB_LABEL" = "Galería";
