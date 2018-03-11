@@ -27,6 +27,13 @@
 		A09A69B9205580060080C92A /* GGMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69B8205580060080C92A /* GGMessageEntity.swift */; };
 		A09A69BB205580F00080C92A /* GGStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69BA205580F00080C92A /* GGStorageManager.swift */; };
 		A09A69C92055CE000080C92A /* GGMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69C82055CE000080C92A /* GGMapViewController.swift */; };
+		A09A69CD2055DB830080C92A /* 001-phone-call.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69CA2055DB820080C92A /* 001-phone-call.png */; };
+		A09A69CE2055DB830080C92A /* 004-sms.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69CB2055DB820080C92A /* 004-sms.png */; };
+		A09A69CF2055DB830080C92A /* 002-email.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69CC2055DB820080C92A /* 002-email.png */; };
+		A09A69D32055E5B20080C92A /* camera-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69D02055E5B20080C92A /* camera-7.png */; };
+		A09A69D42055E5B20080C92A /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69D12055E5B20080C92A /* circle-user-7.png */; };
+		A09A69D52055E5B20080C92A /* business-bag-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69D22055E5B20080C92A /* business-bag-7.png */; };
+		A09A69DC2055EDCF0080C92A /* empty_box.json in Resources */ = {isa = PBXBuildFile; fileRef = A09A69D92055EDCF0080C92A /* empty_box.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +61,13 @@
 		A09A69B8205580060080C92A /* GGMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGMessageEntity.swift; sourceTree = "<group>"; };
 		A09A69BA205580F00080C92A /* GGStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGStorageManager.swift; sourceTree = "<group>"; };
 		A09A69C82055CE000080C92A /* GGMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGMapViewController.swift; sourceTree = "<group>"; };
+		A09A69CA2055DB820080C92A /* 001-phone-call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001-phone-call.png"; sourceTree = "<group>"; };
+		A09A69CB2055DB820080C92A /* 004-sms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "004-sms.png"; sourceTree = "<group>"; };
+		A09A69CC2055DB820080C92A /* 002-email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "002-email.png"; sourceTree = "<group>"; };
+		A09A69D02055E5B20080C92A /* camera-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-7.png"; sourceTree = "<group>"; };
+		A09A69D12055E5B20080C92A /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-user-7.png"; sourceTree = "<group>"; };
+		A09A69D22055E5B20080C92A /* business-bag-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "business-bag-7.png"; sourceTree = "<group>"; };
+		A09A69D92055EDCF0080C92A /* empty_box.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_box.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,7 @@
 		A0477C3C2053922B009BF7B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A09A69D62055EDB60080C92A /* Animations */,
 				A09A69792054C2B80080C92A /* Images */,
 				A0477C3D20539251009BF7B8 /* Localizable.strings */,
 				A0477C3F205393E2009BF7B8 /* UIColor+GGColor.swift */,
@@ -130,6 +145,12 @@
 		A09A69792054C2B80080C92A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A09A69D22055E5B20080C92A /* business-bag-7.png */,
+				A09A69D02055E5B20080C92A /* camera-7.png */,
+				A09A69D12055E5B20080C92A /* circle-user-7.png */,
+				A09A69CA2055DB820080C92A /* 001-phone-call.png */,
+				A09A69CC2055DB820080C92A /* 002-email.png */,
+				A09A69CB2055DB820080C92A /* 004-sms.png */,
 				A09A697D2054CC930080C92A /* 001-linkedin.png */,
 				A09A697C2054CC930080C92A /* 002-skype.png */,
 				A09A697E2054CC930080C92A /* 003-twitter.png */,
@@ -184,6 +205,14 @@
 				A09A69862054D4A90080C92A /* GGGalleryViewController.swift */,
 			);
 			path = Gallery;
+			sourceTree = "<group>";
+		};
+		A09A69D62055EDB60080C92A /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A09A69D92055EDCF0080C92A /* empty_box.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,13 +278,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09A69CD2055DB830080C92A /* 001-phone-call.png in Resources */,
 				A0477C3320538385009BF7B8 /* LaunchScreen.storyboard in Resources */,
+				A09A69CF2055DB830080C92A /* 002-email.png in Resources */,
 				A09A69812054CC940080C92A /* 002-skype.png in Resources */,
+				A09A69D32055E5B20080C92A /* camera-7.png in Resources */,
 				A0477C3E20539251009BF7B8 /* Localizable.strings in Resources */,
+				A09A69DC2055EDCF0080C92A /* empty_box.json in Resources */,
 				A0477C3020538385009BF7B8 /* Assets.xcassets in Resources */,
 				A09A697B2054CB4B0080C92A /* profile_pic.png in Resources */,
+				A09A69CE2055DB830080C92A /* 004-sms.png in Resources */,
 				A09A69842054CC940080C92A /* 005-facebook.png in Resources */,
+				A09A69D42055E5B20080C92A /* circle-user-7.png in Resources */,
 				A09A69832054CC940080C92A /* 003-twitter.png in Resources */,
+				A09A69D52055E5B20080C92A /* business-bag-7.png in Resources */,
 				A0477C2E20538385009BF7B8 /* Main.storyboard in Resources */,
 				A09A69822054CC940080C92A /* 001-linkedin.png in Resources */,
 				A09A69852054CC940080C92A /* 004-instagram.png in Resources */,
@@ -478,9 +514,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH563P76J8;
 				INFOPLIST_FILE = "cv-gigigo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bayer.hh.cv-gigigo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardo.cv-gigigo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -493,9 +530,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH563P76J8;
 				INFOPLIST_FILE = "cv-gigigo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bayer.hh.cv-gigigo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardo.cv-gigigo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

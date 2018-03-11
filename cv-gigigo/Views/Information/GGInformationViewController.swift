@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MessageUI
 
-class GGInformationViewController: UIViewController {
+class GGInformationViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
+    
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -20,9 +22,10 @@ class GGInformationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.FlatColor.Green.Fern;
-        
+        self.view.backgroundColor = UIColor.FlatColor.Gray.WhiteSmoke;
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width/2;
+        self.profileImageView.layer.borderWidth = 10;
+        self.profileImageView.layer.borderColor = UIColor.FlatColor.Green.PersianGreen.cgColor;
         
         self.nameLabel.text = NSLocalizedString("GG_INTRODUCEMENT_NAME", comment: "");
         self.phoneLabel.text = NSLocalizedString("GG_INTRODUCEMENT_PHONE_LABEL", comment: "");
@@ -72,6 +75,38 @@ class GGInformationViewController: UIViewController {
         } else {
             UIApplication.shared.open(URL(string: "itms-apps://itunes.apple.com/app/id304878510")!, options: [:])
         }
+    }
+    
+    @IBAction func phoneTapped(_ sender: Any) {
+        let url: NSURL = URL(string: "tel://5551446494")! as NSURL
+        UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func emailTapped(_ sender: Any) {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["eduardo1618@gmail.com"])
+            mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
+            present(mail, animated: true)
+        }
+    }
+    
+    @IBAction func smsTapped(_ sender: Any) {
+        if (MFMessageComposeViewController.canSendText()) {
+            let controller = MFMessageComposeViewController()
+            controller.recipients = ["5551446494"]
+            controller.messageComposeDelegate = self
+            present(controller, animated: true)
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        controller.dismiss(animated: true)
     }
     
     override func didReceiveMemoryWarning() {

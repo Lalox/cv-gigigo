@@ -14,7 +14,7 @@ class GGResumeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.FlatColor.Blue.Denim;
+        self.view.backgroundColor = UIColor.FlatColor.Gray.WhiteSmoke;
         self.title = NSLocalizedString("GG_RESUME_TAB_LABEL", comment: "");
         
         self.navigationItem.rightBarButtonItem =  UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped));

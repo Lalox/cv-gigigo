@@ -18,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyDt_bxWvO52M2GK-YJe2s0XPzlHcwp9vV8")
+        
+        UITabBar.appearance().barTintColor = UIColor.FlatColor.Gray.IronGray;
+        UITabBar.appearance().tintColor = UIColor.white;
+        UINavigationBar.appearance().barTintColor = UIColor.FlatColor.Gray.IronGray;
+        UINavigationBar.appearance().tintColor = UIColor.white;
+        
         return true
     }
 
