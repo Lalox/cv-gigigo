@@ -26,6 +26,7 @@
 		A09A69902054E4140080C92A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A09A698E2054E4140080C92A /* Model.xcdatamodeld */; };
 		A09A69B9205580060080C92A /* GGMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69B8205580060080C92A /* GGMessageEntity.swift */; };
 		A09A69BB205580F00080C92A /* GGStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69BA205580F00080C92A /* GGStorageManager.swift */; };
+		A09A69C92055CE000080C92A /* GGMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69C82055CE000080C92A /* GGMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		A09A698F2054E4140080C92A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A09A69B8205580060080C92A /* GGMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGMessageEntity.swift; sourceTree = "<group>"; };
 		A09A69BA205580F00080C92A /* GGStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGStorageManager.swift; sourceTree = "<group>"; };
+		A09A69C82055CE000080C92A /* GGMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +143,9 @@
 		A09A69882054DE7D0080C92A /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				A09A69BA205580F00080C92A /* GGStorageManager.swift */,
 				A09A698E2054E4140080C92A /* Model.xcdatamodeld */,
 				A09A69B8205580060080C92A /* GGMessageEntity.swift */,
-				A09A69BA205580F00080C92A /* GGStorageManager.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -152,9 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				A0477C2C20538385009BF7B8 /* Main.storyboard */,
-				A09A69C720559CBC0080C92A /* Galley */,
-				A09A69C620559CB70080C92A /* Resume */,
 				A09A69C520559CAC0080C92A /* Information */,
+				A09A69C620559CB70080C92A /* Resume */,
+				A09A69C720559CBC0080C92A /* Gallery */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,16 +173,17 @@
 			isa = PBXGroup;
 			children = (
 				A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */,
+				A09A69C82055CE000080C92A /* GGMapViewController.swift */,
 			);
 			path = Resume;
 			sourceTree = "<group>";
 		};
-		A09A69C720559CBC0080C92A /* Galley */ = {
+		A09A69C720559CBC0080C92A /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
 				A09A69862054D4A90080C92A /* GGGalleryViewController.swift */,
 			);
-			path = Galley;
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +271,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cv-gigigo/Pods-cv-gigigo-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -326,6 +333,7 @@
 				A09A69B9205580060080C92A /* GGMessageEntity.swift in Sources */,
 				A0477C2B20538385009BF7B8 /* GGResumeViewController.swift in Sources */,
 				A0477C40205393E2009BF7B8 /* UIColor+GGColor.swift in Sources */,
+				A09A69C92055CE000080C92A /* GGMapViewController.swift in Sources */,
 				A0477C2720538385009BF7B8 /* AppDelegate.swift in Sources */,
 				A0477C2920538385009BF7B8 /* GGInformationViewController.swift in Sources */,
 				A09A69902054E4140080C92A /* Model.xcdatamodeld in Sources */,

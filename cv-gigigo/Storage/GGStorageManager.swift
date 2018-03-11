@@ -26,10 +26,25 @@ class GGStorageManager {
         let newMessage = NSManagedObject(entity: entity!, insertInto: context)
         newMessage.setValue(content, forKey: "content");
         newMessage.setValue(Date(), forKey: "date");
-        do {
-            try context.save()
-        } catch {
-            print("Failed saving")
+        if (context.hasChanges){
+            do {
+                try context.save()
+            } catch {
+                print("Failed saving")
+            }
+        }
+    }
+    
+    static func deleteMessage(item: NSManagedObject){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        context.delete(item);
+        if (context.hasChanges){
+            do {
+                try context.save()
+            } catch {
+                print("Failed saving")
+            }
         }
     }
     

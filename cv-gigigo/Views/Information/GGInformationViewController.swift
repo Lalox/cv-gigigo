@@ -34,6 +34,46 @@ class GGInformationViewController: UIViewController {
         self.title = NSLocalizedString("GG_INTRODUCEMENT_TAB_LABEL", comment: "");
     }
     
+    @IBAction func facebookTapped(_ sender: Any) {
+        if UIApplication.shared.canOpenURL(URL(string: "fb://profile/LaloxMR")!) {
+            UIApplication.shared.open(URL(string: "fb://profile/LaloxMR")!, options: [:])
+        } else {
+            UIApplication.shared.open(URL(string: "https://facebook.com/LaloxMR")!, options: [:])
+        }
+    }
+    
+    @IBAction func instagramTapped(_ sender: Any) {
+        if UIApplication.shared.canOpenURL(URL(string: "instagram://user?username=laloxmr")!) {
+            UIApplication.shared.open(URL(string: "instagram://user?username=laloxmr")!, options: [:])
+        } else {
+            UIApplication.shared.open(URL(string: "https://instagram.com/laloxmr")!, options: [:])
+        }
+    }
+    
+    @IBAction func twitterTapped(_ sender: Any) {
+        if UIApplication.shared.canOpenURL(URL(string: "twitter://user?screen_name=Lalox_MR")!) {
+            UIApplication.shared.open(URL(string: "twitter://user?screen_name=Lalox_MR")!, options: [:])
+        } else {
+            UIApplication.shared.open(URL(string: "https://twitter.com/Lalox_MR")!, options: [:])
+        }
+    }
+    
+    @IBAction func linkedInTapped(_ sender: Any) {
+        if UIApplication.shared.canOpenURL(URL(string: "linkedin://#profile/eduardo-mr")!) {
+            UIApplication.shared.open(URL(string: "linkedin://#profile/eduardo-mr")!, options: [:])
+        } else {
+            UIApplication.shared.open(URL(string: "https://www.linkedin.com/in/eduardo-mr")!, options: [:])
+        }
+    }
+    
+    @IBAction func skypeTapped(_ sender: Any) {
+        if UIApplication.shared.canOpenURL(URL(string: "skype:laloxmr?chat")!) {
+            UIApplication.shared.open(URL(string: "skype:laloxmr?chat")!, options: [:])
+        } else {
+            UIApplication.shared.open(URL(string: "itms-apps://itunes.apple.com/app/id304878510")!, options: [:])
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

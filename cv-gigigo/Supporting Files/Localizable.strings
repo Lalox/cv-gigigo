@@ -28,7 +28,8 @@
 "GG_SECOND_SECTION_TITLE" = "Mensajes";
 "GG_ALERT_TITLE" = "Mensaje:";
 "GG_ALERT_PLACEHOLDER" = "Escribe tu mensaje aquí";
-"GG_ALERT_OK" = "Guardar";
+"GG_ALERT_SAVE" = "Guardar";
+"GG_ALERT_OK" = "Aceptar";
 "GG_ALERT_CANCEL" = "Cancelar";
 
 //Pantalla de galería

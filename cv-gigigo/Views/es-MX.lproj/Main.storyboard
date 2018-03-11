@@ -90,6 +90,9 @@
                                             <constraint firstAttribute="width" secondItem="AHR-Ca-etl" secondAttribute="height" multiplier="1:1" id="EYe-zO-6aE"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="005-facebook.png"/>
+                                        <connections>
+                                            <action selector="facebookTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="flP-Ff-M52"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNp-pu-GL5">
                                         <rect key="frame" x="46" y="0.0" width="30" height="30"/>
@@ -97,6 +100,9 @@
                                             <constraint firstAttribute="width" secondItem="nNp-pu-GL5" secondAttribute="height" multiplier="1:1" id="gei-hg-W0A"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="004-instagram.png"/>
+                                        <connections>
+                                            <action selector="instagramTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="MWw-69-t9L"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXH-Kf-Je9">
                                         <rect key="frame" x="92" y="0.0" width="30" height="30"/>
@@ -104,6 +110,9 @@
                                             <constraint firstAttribute="width" secondItem="jXH-Kf-Je9" secondAttribute="height" multiplier="1:1" id="Xfu-Jy-jcd"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="003-twitter.png"/>
+                                        <connections>
+                                            <action selector="twitterTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Plx-kG-CJ1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="II1-GT-9yJ">
                                         <rect key="frame" x="138" y="0.0" width="30" height="30"/>
@@ -111,6 +120,9 @@
                                             <constraint firstAttribute="width" secondItem="II1-GT-9yJ" secondAttribute="height" multiplier="1:1" id="Pzl-NA-Qby"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="001-linkedin.png"/>
+                                        <connections>
+                                            <action selector="linkedInTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="yMT-5z-Uyr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-gZ-727">
                                         <rect key="frame" x="184" y="0.0" width="30" height="30"/>
@@ -119,6 +131,9 @@
                                             <constraint firstAttribute="height" constant="30" id="gOs-90-Arx"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="002-skype.png"/>
+                                        <connections>
+                                            <action selector="skypeTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="MKp-JL-yiC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -190,21 +205,20 @@
             </objects>
             <point key="canvasLocation" x="1833" y="358"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="VjI-qK-LAk">
+        <!--Map View Controller-->
+        <scene sceneID="gIV-50-cGl">
             <objects>
-                <viewController id="5WV-QJ-Afe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IaM-ZR-8eX">
+                <viewController storyboardIdentifier="MapViewControllerIdentifier" id="cjt-ee-EmI" customClass="GGMapViewController" customModule="cv_gigigo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GHo-3w-vQj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7Cj-8b-f0y"/>
+                        <viewLayoutGuide key="safeArea" id="rBX-Ka-wMu"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dK1-2K-ZXL"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="26n-7g-R0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIT-pf-YpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4254" y="369"/>
+            <point key="canvasLocation" x="2878" y="357"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="H91-za-hdE">
@@ -317,24 +331,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KoP-Nf-QKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="878" y="1137"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0Et-bX-Avx">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A1u-Jf-okk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PxS-Of-elo">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5WV-QJ-Afe" kind="relationship" relationship="rootViewController" id="ZCp-32-s2e"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oJl-la-fxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3188.8000000000002" y="369.71514242878561"/>
         </scene>
     </scenes>
     <resources>

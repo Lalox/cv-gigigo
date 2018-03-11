@@ -26,7 +26,7 @@ class GGResumeViewController: UITableViewController {
         alert.addTextField(configurationHandler: { textField in
             textField.placeholder = NSLocalizedString("GG_ALERT_PLACEHOLDER", comment: "")
         })
-        alert.addAction(UIAlertAction(title: NSLocalizedString("GG_ALERT_OK", comment: ""), style: .default, handler: { action in
+        alert.addAction(UIAlertAction(title: NSLocalizedString("GG_ALERT_SAVE", comment: ""), style: .default, handler: { action in
             if let message = alert.textFields?.first?.text {
                 GGStorageManager.createMessage(content: message)
                 self.tableView.reloadData();
@@ -66,6 +66,16 @@ class GGResumeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true);
+        if (indexPath.section == 0) {
+            if (indexPath.item == 0){
+                let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "MapViewControllerIdentifier") as? GGMapViewController
+                self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
+            }
+        } else {
+            let alert = UIAlertController(title: NSLocalizedString("GG_ALERT_TITLE", comment: ""), message: messages[indexPath.item].content, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("GG_ALERT_OK", comment: ""), style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,6 +101,23 @@ class GGResumeViewController: UITableViewController {
             cell?.detailTextLabel?.text = messages[indexPath.item].content;
         }
         return cell!;
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        if (indexPath.section == 1){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            GGStorageManager.deleteMessage(item: messages[indexPath.row]);
+            self.tableView.beginUpdates()
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.tableView.endUpdates()
+        }
     }
 }
 
