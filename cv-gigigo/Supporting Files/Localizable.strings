@@ -8,5 +8,21 @@
 
 //Pantalla de resumen
 
+"GG_INTRODUCEMENT_TAB_LABEL" = "Presentación";
+
 "GG_INTRODUCEMENT_NAME" = "Eduardo Jesus Miñon Rosado";
-"GG_INTRODUCEMENT_ADDRESS" = "Obrero Mundial No920, Int 402, Álamos, CP 03400, Benito Juárez, Ciudad de México";
+"GG_INTRODUCEMENT_ADDRESS" = "Obrero Mundial No.920, Int 402, Álamos, CP 03400, Benito Juárez, Ciudad de México";
+"GG_INTRODUCEMENT_PHONE_LABEL" = "Teléfono: ";
+"GG_INTRODUCEMENT_PHONE" = "5551446494";
+"GG_INTRODUCEMENT_EMAIL_LABEL" = "Correo electrónico: ";
+"GG_INTRODUCEMENT_EMAIL" = "eduardo1618@gmail.com";
+
+//Pantalla de currículum
+"GG_RESUME_TAB_LABEL" = "C.V.";
+
+//Pantalla de galería
+"GG_GALLERY_TAB_LABEL" = "Galería";
+
+//Pantalla de apliaciones
+"GG_APPS_TAB_LABEL" = "Aplicaciones";
+

@@ -8,11 +8,13 @@
 
 import UIKit
 
-class GGResumeViewController: UIViewController {
+class GGResumeViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.backgroundColor = UIColor.FlatColor.Blue.Denim;
+        self.title = NSLocalizedString("GG_RESUME_TAB_LABEL", comment: "");
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +22,17 @@ class GGResumeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1;
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "GG_RESUME_CELL");
+        if (cell == nil){
+            cell = UITableViewCell();
+        }
+        cell?.textLabel?.text = "Hola mundo";
+        return cell!;
+    }
 }
 

@@ -16,6 +16,13 @@
 		A0477C3320538385009BF7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0477C3120538385009BF7B8 /* LaunchScreen.storyboard */; };
 		A0477C3E20539251009BF7B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0477C3D20539251009BF7B8 /* Localizable.strings */; };
 		A0477C40205393E2009BF7B8 /* UIColor+GGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0477C3F205393E2009BF7B8 /* UIColor+GGColor.swift */; };
+		A09A697B2054CB4B0080C92A /* profile_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A697A2054CB4B0080C92A /* profile_pic.png */; };
+		A09A69812054CC940080C92A /* 002-skype.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A697C2054CC930080C92A /* 002-skype.png */; };
+		A09A69822054CC940080C92A /* 001-linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A697D2054CC930080C92A /* 001-linkedin.png */; };
+		A09A69832054CC940080C92A /* 003-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A697E2054CC930080C92A /* 003-twitter.png */; };
+		A09A69842054CC940080C92A /* 005-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A697F2054CC930080C92A /* 005-facebook.png */; };
+		A09A69852054CC940080C92A /* 004-instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A69802054CC940080C92A /* 004-instagram.png */; };
+		A09A69872054D4A90080C92A /* GGGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69862054D4A90080C92A /* GGGalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,14 +33,19 @@
 		A0477C2620538385009BF7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0477C2820538385009BF7B8 /* GGInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGInformationViewController.swift; sourceTree = "<group>"; };
 		A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGResumeViewController.swift; sourceTree = "<group>"; };
-		A0477C2D20538385009BF7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0477C2F20538385009BF7B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0477C3220538385009BF7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0477C3420538385009BF7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0477C3A20538ED7009BF7B8 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
-		A0477C3B20538ED7009BF7B8 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A0477C3D20539251009BF7B8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A0477C3F205393E2009BF7B8 /* UIColor+GGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+GGColor.swift"; sourceTree = "<group>"; };
+		A09A69762054BB330080C92A /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-MX"; path = "es-MX.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		A09A69782054BFE80080C92A /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		A09A697A2054CB4B0080C92A /* profile_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_pic.png; sourceTree = "<group>"; };
+		A09A697C2054CC930080C92A /* 002-skype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "002-skype.png"; sourceTree = "<group>"; };
+		A09A697D2054CC930080C92A /* 001-linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001-linkedin.png"; sourceTree = "<group>"; };
+		A09A697E2054CC930080C92A /* 003-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "003-twitter.png"; sourceTree = "<group>"; };
+		A09A697F2054CC930080C92A /* 005-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "005-facebook.png"; sourceTree = "<group>"; };
+		A09A69802054CC940080C92A /* 004-instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "004-instagram.png"; sourceTree = "<group>"; };
+		A09A69862054D4A90080C92A /* GGGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGGalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 				A0477C2620538385009BF7B8 /* AppDelegate.swift */,
 				A0477C2820538385009BF7B8 /* GGInformationViewController.swift */,
 				A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */,
+				A09A69862054D4A90080C92A /* GGGalleryViewController.swift */,
 				A0477C2C20538385009BF7B8 /* Main.storyboard */,
 				A0477C2F20538385009BF7B8 /* Assets.xcassets */,
 				A0477C3120538385009BF7B8 /* LaunchScreen.storyboard */,
@@ -101,10 +114,24 @@
 		A0477C3C2053922B009BF7B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A09A69792054C2B80080C92A /* Images */,
 				A0477C3D20539251009BF7B8 /* Localizable.strings */,
 				A0477C3F205393E2009BF7B8 /* UIColor+GGColor.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A09A69792054C2B80080C92A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A09A697D2054CC930080C92A /* 001-linkedin.png */,
+				A09A697C2054CC930080C92A /* 002-skype.png */,
+				A09A697E2054CC930080C92A /* 003-twitter.png */,
+				A09A69802054CC940080C92A /* 004-instagram.png */,
+				A09A697F2054CC930080C92A /* 005-facebook.png */,
+				A09A697A2054CB4B0080C92A /* profile_pic.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +180,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				"es-MX",
 			);
 			mainGroup = A0477C1A20538385009BF7B8;
 			productRefGroup = A0477C2420538385009BF7B8 /* Products */;
@@ -170,9 +198,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0477C3320538385009BF7B8 /* LaunchScreen.storyboard in Resources */,
+				A09A69812054CC940080C92A /* 002-skype.png in Resources */,
 				A0477C3E20539251009BF7B8 /* Localizable.strings in Resources */,
 				A0477C3020538385009BF7B8 /* Assets.xcassets in Resources */,
+				A09A697B2054CB4B0080C92A /* profile_pic.png in Resources */,
+				A09A69842054CC940080C92A /* 005-facebook.png in Resources */,
+				A09A69832054CC940080C92A /* 003-twitter.png in Resources */,
 				A0477C2E20538385009BF7B8 /* Main.storyboard in Resources */,
+				A09A69822054CC940080C92A /* 001-linkedin.png in Resources */,
+				A09A69852054CC940080C92A /* 004-instagram.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09A69872054D4A90080C92A /* GGGalleryViewController.swift in Sources */,
 				A0477C2B20538385009BF7B8 /* GGResumeViewController.swift in Sources */,
 				A0477C40205393E2009BF7B8 /* UIColor+GGColor.swift in Sources */,
 				A0477C2720538385009BF7B8 /* AppDelegate.swift in Sources */,
@@ -250,8 +285,7 @@
 		A0477C2C20538385009BF7B8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A0477C2D20538385009BF7B8 /* Base */,
-				A0477C3A20538ED7009BF7B8 /* es-MX */,
+				A09A69762054BB330080C92A /* es-MX */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -259,8 +293,7 @@
 		A0477C3120538385009BF7B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A0477C3220538385009BF7B8 /* Base */,
-				A0477C3B20538ED7009BF7B8 /* es-MX */,
+				A09A69782054BFE80080C92A /* es-MX */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -388,7 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bayer.hh.cv-gigigo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -403,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bayer.hh.cv-gigigo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
