@@ -47,7 +47,7 @@ class GGResumeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0) {
-            return 3;
+            return 4;
         } else {
             return messages.count;
         }
@@ -86,6 +86,9 @@ class GGResumeViewController: UITableViewController {
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30, repeats: false)
                 let request = UNNotificationRequest(identifier: "TestIdentifier", content: content, trigger: trigger)
                 UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            } else if (indexPath.item == 3) {
+                let controller = self.storyboard?.instantiateViewController(withIdentifier: "QRScannerViewControllerIdentifier")
+                self.navigationController?.pushViewController(controller!, animated: true)
             }
         } else {
             let alert = UIAlertController(title: NSLocalizedString("GG_ALERT_TITLE", comment: ""), message: messages[indexPath.item].content, preferredStyle: .alert)
@@ -107,6 +110,8 @@ class GGResumeViewController: UITableViewController {
                 cell?.textLabel?.text = NSLocalizedString("GG_FTIST_SECTION_ITEM_2", comment: "");
             case 2:
                 cell?.textLabel?.text = NSLocalizedString("GG_FTIST_SECTION_ITEM_3", comment: "");
+            case 3:
+                cell?.textLabel?.text = NSLocalizedString("GG_FTIST_SECTION_ITEM_4", comment: "");
             default:
                 cell?.textLabel?.text = "";
             }

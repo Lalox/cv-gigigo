@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Se necesita acceso a la cámara para lectura de códigos QR.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Se utilizará tu localización para mostrar los pines cercanos.</string>
 	<key>CFBundleDevelopmentRegion</key>

@@ -37,6 +37,7 @@
 		A09A69DE205606400080C92A /* GGAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69DD205606400080C92A /* GGAppsViewController.swift */; };
 		A09A69E3205606B10080C92A /* applications.plist in Resources */ = {isa = PBXBuildFile; fileRef = A09A69E2205606B10080C92A /* applications.plist */; };
 		A09A69E5205614BC0080C92A /* GGWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69E4205614BC0080C92A /* GGWebViewController.swift */; };
+		A09A69E9205642320080C92A /* GGScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A69E7205642320080C92A /* GGScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		A09A69DD205606400080C92A /* GGAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGAppsViewController.swift; sourceTree = "<group>"; };
 		A09A69E2205606B10080C92A /* applications.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = applications.plist; sourceTree = "<group>"; };
 		A09A69E4205614BC0080C92A /* GGWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGWebViewController.swift; sourceTree = "<group>"; };
+		A09A69E7205642320080C92A /* GGScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		A09A69C620559CB70080C92A /* Resume */ = {
 			isa = PBXGroup;
 			children = (
+				A09A69E7205642320080C92A /* GGScannerViewController.swift */,
 				A0477C2A20538385009BF7B8 /* GGResumeViewController.swift */,
 				A09A69C82055CE000080C92A /* GGMapViewController.swift */,
 				A09A69DD205606400080C92A /* GGAppsViewController.swift */,
@@ -393,6 +396,7 @@
 				A09A69E5205614BC0080C92A /* GGWebViewController.swift in Sources */,
 				A0477C2920538385009BF7B8 /* GGInformationViewController.swift in Sources */,
 				A09A69902054E4140080C92A /* Model.xcdatamodeld in Sources */,
+				A09A69E9205642320080C92A /* GGScannerViewController.swift in Sources */,
 				A09A69BB205580F00080C92A /* GGStorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
