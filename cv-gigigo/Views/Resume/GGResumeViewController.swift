@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class GGResumeViewController: UITableViewController {
     var messages: [Messages] = [];
@@ -73,6 +74,18 @@ class GGResumeViewController: UITableViewController {
             } else if (indexPath.item == 1){
                 let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "AppsViewControllerIdentifier") as? GGAppsViewController
                 self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
+            } else if (indexPath.item == 2){
+                let alert = UIAlertController(title: "", message: NSLocalizedString("GG_LOCAL_NOTIFICATION_MESSAGE", comment: ""), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("GG_ALERT_OK", comment: ""), style: .cancel, handler: nil))
+                self.present(alert, animated: true)
+                
+                let content = UNMutableNotificationContent()
+                content.title = "Hola Mundo!"
+                content.body = "Notificación local"
+                content.sound = UNNotificationSound.default()
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30, repeats: false)
+                let request = UNNotificationRequest(identifier: "TestIdentifier", content: content, trigger: trigger)
+                UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
             }
         } else {
             let alert = UIAlertController(title: NSLocalizedString("GG_ALERT_TITLE", comment: ""), message: messages[indexPath.item].content, preferredStyle: .alert)

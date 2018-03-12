@@ -23,7 +23,7 @@
 "GG_FIRST_SECTION_TITLE" = "Formación y experiencia profesional";
 "GG_FTIST_SECTION_ITEM_1" = "Experiencia";
 "GG_FTIST_SECTION_ITEM_2" = "Aplicaciones";
-"GG_FTIST_SECTION_ITEM_3" = "Otros";
+"GG_FTIST_SECTION_ITEM_3" = "Notificación local";
 
 "GG_SECOND_SECTION_TITLE" = "Mensajes";
 "GG_DESCRIPTION_TITLE" = "Descripción:";
@@ -32,6 +32,7 @@
 "GG_ALERT_SAVE" = "Guardar";
 "GG_ALERT_OK" = "Aceptar";
 "GG_ALERT_CANCEL" = "Cancelar";
+"GG_LOCAL_NOTIFICATION_MESSAGE" = "En 30 segundos será lanzada una notificación local.";
 
 "GG_APP_PUBLISHED" = "Publicado";
 "GG_APP_REMOVED" = "Retirado";
