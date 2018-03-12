@@ -26,11 +26,16 @@
 "GG_FTIST_SECTION_ITEM_3" = "Otros";
 
 "GG_SECOND_SECTION_TITLE" = "Mensajes";
+"GG_DESCRIPTION_TITLE" = "Descripción:";
 "GG_ALERT_TITLE" = "Mensaje:";
 "GG_ALERT_PLACEHOLDER" = "Escribe tu mensaje aquí";
 "GG_ALERT_SAVE" = "Guardar";
 "GG_ALERT_OK" = "Aceptar";
 "GG_ALERT_CANCEL" = "Cancelar";
+
+"GG_APP_PUBLISHED" = "Publicado";
+"GG_APP_REMOVED" = "Retirado";
+"GG_APP_UPDATED" = "Nueva versión";
 
 //Pantalla de galería
 "GG_GALLERY_TAB_LABEL" = "Galería";

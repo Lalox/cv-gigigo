@@ -70,6 +70,9 @@ class GGResumeViewController: UITableViewController {
             if (indexPath.item == 0){
                 let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "MapViewControllerIdentifier") as? GGMapViewController
                 self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
+            } else if (indexPath.item == 1){
+                let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "AppsViewControllerIdentifier") as? GGAppsViewController
+                self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
             }
         } else {
             let alert = UIAlertController(title: NSLocalizedString("GG_ALERT_TITLE", comment: ""), message: messages[indexPath.item].content, preferredStyle: .alert)

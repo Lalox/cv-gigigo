@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>status</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Mi Cultivo con Bayer</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/mx/app/mi-cultivo-con-bayer/id1134936706?mt=8</string>
+		<key>tools</key>
+		<array>
+			<string>CoreData</string>
+			<string>APNS</string>
+			<string>AFNetworking</string>
+			<string>CocoaPods</string>
+		</array>
+	</dict>
+	<dict>
+		<key>status</key>
+		<integer>2</integer>
+		<key>description</key>
+		<string>Aplicación de agenda y realizad aumentada que mostraba la degeneración del ojo a través del tiempo.</string>
+		<key>name</key>
+		<string>Xarelto</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/mx/app/mi-cultivo-con-bayer/id1134936706?mt=8</string>
+		<key>tools</key>
+		<array>
+			<string>CoreData</string>
+			<string>APNS</string>
+			<string>AFNetworking</string>
+			<string>CocoaPods</string>
+			<string>Metaio AR</string>
+		</array>
+	</dict>
+	<dict>
+		<key>status</key>
+		<integer>2</integer>
+		<key>description</key>
+		<string>Aplicación de fidelidad para clientes de la farmaceútica Novartis</string>
+		<key>name</key>
+		<string>MiConTacto</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/mx/app/mi-cultivo-con-bayer/id1134936706?mt=8</string>
+		<key>tools</key>
+		<array>
+			<string>CoreData</string>
+			<string>APNS</string>
+			<string>AFNetworking</string>
+			<string>CocoaPods</string>
+		</array>
+	</dict>
+	<dict>
+		<key>status</key>
+		<integer>3</integer>
+		<key>description</key>
+		<string>Aplicación para la consulta de saldos, movimientos y comercios afilidados de la tarjeta de vales Edenred</string>
+		<key>name</key>
+		<string>Edenred</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/mx/app/mi-ticket-wallet/id414418591?mt=8</string>
+		<key>tools</key>
+		<array>
+			<string>CoreData</string>
+			<string>APNS</string>
+			<string>AFNetworking</string>
+			<string>CocoaPods</string>
+		</array>
+	</dict>
+	<dict>
+		<key>status</key>
+		<integer>3</integer>
+		<key>description</key>
+		<string>Aplicación de banca móvil para conuslta de saldos, transferencias y movimientos.</string>
+		<key>name</key>
+		<string>Santander</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/mx/app/santander-m%C3%B3vil/id498944221?mt=8</string>
+		<key>tools</key>
+		<array>
+			<string>CoreData</string>
+			<string>APNS</string>
+			<string>AFNetworking</string>
+			<string>CocoaPods</string>
+		</array>
+	</dict>
+</array>
+</plist>

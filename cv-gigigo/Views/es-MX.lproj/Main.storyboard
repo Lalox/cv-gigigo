@@ -262,6 +262,40 @@
             </objects>
             <point key="canvasLocation" x="2878" y="357"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Gxr-z0-0S7">
+            <objects>
+                <viewController storyboardIdentifier="WebViewControllerIdentifier" id="Eqi-Kn-wae" customClass="GGWebViewController" customModule="cv_gigigo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ww6-x4-pHL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w7-A8-z5M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2w7-A8-z5M" firstAttribute="bottom" secondItem="Plg-Sx-xSr" secondAttribute="bottom" id="AgR-DD-blk"/>
+                            <constraint firstItem="2w7-A8-z5M" firstAttribute="top" secondItem="Ww6-x4-pHL" secondAttribute="top" id="GDE-VB-8pn"/>
+                            <constraint firstItem="2w7-A8-z5M" firstAttribute="leading" secondItem="Plg-Sx-xSr" secondAttribute="leading" id="ZH5-bl-zYZ"/>
+                            <constraint firstItem="2w7-A8-z5M" firstAttribute="trailing" secondItem="Plg-Sx-xSr" secondAttribute="trailing" id="zsD-F7-nXv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Plg-Sx-xSr"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="2w7-A8-z5M" id="wLt-77-ROF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Cq-0A-s3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3701.5999999999999" y="356.67166416791605"/>
+        </scene>
         <!--Gallery View Controller-->
         <scene sceneID="H91-za-hdE">
             <objects>
@@ -271,17 +305,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v9X-Cb-BPv">
-                            <size key="itemSize" width="200" height="150"/>
+                            <size key="itemSize" width="200" height="37"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="GG_GALLERY_CELL" id="Jdd-fm-CYp">
-                                <rect key="frame" x="87.5" y="10" width="200" height="150"/>
+                                <rect key="frame" x="87.5" y="10" width="200" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="37"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                             </collectionViewCell>
@@ -296,6 +330,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMs-C0-gFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1832.8" y="1136.5817091454273"/>
+        </scene>
+        <!--Apps View Controller-->
+        <scene sceneID="9h5-x7-rvk">
+            <objects>
+                <tableViewController storyboardIdentifier="AppsViewControllerIdentifier" id="7C3-Kg-BW8" customClass="GGAppsViewController" customModule="cv_gigigo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aqg-JM-OnN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="7C3-Kg-BW8" id="Yfz-fk-TGN"/>
+                            <outlet property="delegate" destination="7C3-Kg-BW8" id="xNI-Yd-Btm"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92h-T8-WRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2878" y="1117"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
