@@ -9,7 +9,8 @@
 import UIKit
 import Lottie
 
-class GGGalleryViewController: UICollectionViewController {
+class GGGalleryViewController: UIViewController {
+    @IBOutlet weak var messageLabel: UILabel!
     
     private var empty: LOTAnimationView?
     
@@ -17,6 +18,9 @@ class GGGalleryViewController: UICollectionViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.FlatColor.Gray.WhiteSmoke;
         self.title = NSLocalizedString("GG_GALLERY_TAB_LABEL", comment: "");
+        
+        self.messageLabel.textColor = UIColor.FlatColor.Red.TerraCotta
+        self.messageLabel.text = NSLocalizedString("GG_GALLERY_NO_ITEMS", comment: "")
         
         let wink = LOTAnimationView(name: "empty_box")
         wink.frame = CGRect(x: 0, y: 0, width: 350, height: 500)
@@ -26,25 +30,10 @@ class GGGalleryViewController: UICollectionViewController {
         wink.loopAnimation = true
         view.addSubview(wink)
         wink.play()
-        
-        self.collectionView?.isHidden = true;
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 0;
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0;
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GG_GALLERY_CELL", for: indexPath)  ;
-        return cell;
     }
 }

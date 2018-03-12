@@ -36,6 +36,7 @@
 "GG_ALERT_CANCEL" = "Cancelar";
 "GG_LOCAL_NOTIFICATION_MESSAGE" = "En 30 segundos será lanzada una notificación local.";
 "GG_QR_ERROR" = "Hubo un error al realizar el escaneo.";
+"GG_GALLERY_NO_ITEMS" = "Sin elementos\nEspéralo en la siguiente actualización";
 
 
 "GG_APP_PUBLISHED" = "Publicado";

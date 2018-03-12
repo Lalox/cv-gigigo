@@ -296,41 +296,6 @@
             </objects>
             <point key="canvasLocation" x="3701.5999999999999" y="356.67166416791605"/>
         </scene>
-        <!--Gallery View Controller-->
-        <scene sceneID="H91-za-hdE">
-            <objects>
-                <collectionViewController id="Ivv-RY-Dym" customClass="GGGalleryViewController" customModule="cv_gigigo" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9nv-ed-laf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v9X-Cb-BPv">
-                            <size key="itemSize" width="200" height="37"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="GG_GALLERY_CELL" id="Jdd-fm-CYp">
-                                <rect key="frame" x="87.5" y="10" width="200" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="37"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="Ivv-RY-Dym" id="gRP-sj-Zlu"/>
-                            <outlet property="delegate" destination="Ivv-RY-Dym" id="dlb-NQ-ZbD"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="J8j-ot-tXm"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KMs-C0-gFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1832.8" y="1136.5817091454273"/>
-        </scene>
         <!--Apps View Controller-->
         <scene sceneID="9h5-x7-rvk">
             <objects>
@@ -347,7 +312,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92h-T8-WRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="1117"/>
+            <point key="canvasLocation" x="3216.8000000000002" y="1116.7916041979011"/>
         </scene>
         <!--Scanner View Controller-->
         <scene sceneID="Ox0-5U-YNh">
@@ -362,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puU-Dq-1E6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3702" y="1137"/>
+            <point key="canvasLocation" x="4040.8000000000002" y="1136.5817091454273"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -377,7 +342,7 @@
                     <connections>
                         <segue destination="ocL-8L-PB8" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="eZx-N3-OOH" kind="relationship" relationship="viewControllers" id="9fk-Ch-KIY"/>
-                        <segue destination="Rcz-2V-nUs" kind="relationship" relationship="viewControllers" id="VCL-bE-ZPd"/>
+                        <segue destination="R6j-Pr-q0N" kind="relationship" relationship="viewControllers" id="xBY-dD-znu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -422,24 +387,59 @@
             </objects>
             <point key="canvasLocation" x="879" y="358"/>
         </scene>
-        <!--Galería-->
-        <scene sceneID="VPh-cD-9lP">
+        <!--Gallery View Controller-->
+        <scene sceneID="ifM-6T-LuQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rcz-2V-nUs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Galería" image="camera-7.png" selectedImage="camera-7.png" id="L1z-LG-kde"/>
+                <viewController id="g58-As-Pd8" customClass="GGGalleryViewController" customModule="cv_gigigo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jdj-KJ-pHD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-hE-7Gw">
+                                <rect key="frame" x="16" y="479" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Ewb-wf-B66"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MLu-y5-myh" firstAttribute="bottom" secondItem="eqb-hE-7Gw" secondAttribute="bottom" constant="20" id="5Yn-wy-IKX"/>
+                            <constraint firstItem="MLu-y5-myh" firstAttribute="trailing" secondItem="eqb-hE-7Gw" secondAttribute="trailing" constant="16" id="68j-OW-CbV"/>
+                            <constraint firstItem="eqb-hE-7Gw" firstAttribute="leading" secondItem="MLu-y5-myh" secondAttribute="leading" constant="16" id="Mv2-NH-KdC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MLu-y5-myh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CvR-9f-4HQ"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="eqb-hE-7Gw" id="QcY-Em-4Lx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPf-6u-BfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736.8" y="1208.5457271364319"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="zQc-7m-je1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R6j-Pr-q0N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="camera-7.png" id="64N-tZ-ROD"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OIe-pG-KXv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZPw-Wy-d50">
                         <rect key="frame" x="0.0" y="-44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ivv-RY-Dym" kind="relationship" relationship="rootViewController" id="7Av-Iv-Rn5"/>
+                        <segue destination="g58-As-Pd8" kind="relationship" relationship="rootViewController" id="M9K-nY-itf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KoP-Nf-QKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5P2-0i-Jue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="1137"/>
+            <point key="canvasLocation" x="878" y="1209"/>
         </scene>
     </scenes>
     <resources>

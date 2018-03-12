@@ -536,7 +536,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8184096178EF2BA269BADDFA /* Pods-cv-gigigo.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LH563P76J8;
 				INFOPLIST_FILE = "cv-gigigo/Info.plist";
@@ -552,7 +551,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84B79A02C051B97CEC8B395B /* Pods-cv-gigigo.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LH563P76J8;
 				INFOPLIST_FILE = "cv-gigigo/Info.plist";

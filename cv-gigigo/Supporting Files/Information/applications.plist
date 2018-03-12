@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>description</key>
+		<string>Aplicación para el monitoreo de cultivos, realiza recomendaciones y recordatorios de los diferentes productos de Bayer que pueden ser aplicados a los mismos.</string>
 		<key>status</key>
 		<integer>1</integer>
 		<key>name</key>
